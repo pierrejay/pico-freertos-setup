@@ -1,2 +1,5 @@
 build
-!.vscode/*
+vscode
+CMakeCache.txt
+CMakeFiles
+.DS_Store
