@@ -43,6 +43,13 @@
 #define configSUPPORT_PICO_TIME_INTEROP         1
 
 
+/* Compatibility for lwIP */
+#ifndef portTICK_RATE_MS
+  #define portTICK_RATE_MS portTICK_PERIOD_MS
+#endif
+#define INCLUDE_xSemaphoreGetMutexHolder 1
+
+
 // ===================================================================================
 // COMMON FREERTOS CONFIG
 // ===================================================================================
